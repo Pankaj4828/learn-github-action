@@ -1,0 +1,17 @@
+#Name of tthe job
+name: First WorkFlow
+
+#specify when this job to be trigger
+on: 
+  push:
+     branches: [main]
+
+jobs:
+  Greet: 
+    runs-on: ubantu-latest
+    steps:
+     - name: says hello to user
+       run: echo "Hello Everyone "
+
+    - name: say hello to specific user name
+      run: echo "Hello $USER "
