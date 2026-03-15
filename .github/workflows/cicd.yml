@@ -10,16 +10,19 @@ jobs:
           - name : checkout
             run: echo "github branch is chnage"
     build:
+      needs: [code]
       runs-on: ubuntu-latest
       steps:
           - name: build docker container
             run: echo "docker container build"
     test:
+        needs: [build]
         runs-on: ubuntu-latest
         steps:
            - name: tset on container
              run: echo "testing the container"
     deploy:
+       needs: [build, test]
        runs-on: ubuntu-latest
        steps:
          - name : depolying the app
