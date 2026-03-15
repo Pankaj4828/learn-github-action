@@ -1,0 +1,28 @@
+name: secondfile
+
+on: 
+  push:
+    branches: [main]
+jobs:
+    code:
+      runs-on: ubuntu-latest
+      steps:
+          - name : checkout
+            run: echo "github branch is chnage"
+    build:
+      runs-on: ubuntu-latest
+      steps:
+          - name: build docker container
+            run: echo"docker container build"
+    test:
+        runs-on: ubuntu-latest
+        steps:
+           - name: tset on container
+             run: echo "testing the container"
+    deploy:
+       runs-on: ubuntu-latest
+       steps:
+         - name : depolying the app
+           run: echo"the app deploy in the container"
+      
+        
