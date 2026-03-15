@@ -13,7 +13,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
           - name: build docker container
-            run: echo"docker container build"
+            run: echo "docker container build"
     test:
         runs-on: ubuntu-latest
         steps:
@@ -23,6 +23,6 @@ jobs:
        runs-on: ubuntu-latest
        steps:
          - name : depolying the app
-           run: echo"the app deploy in the container"
+           run: echo "the app deploy in the container"
       
         
