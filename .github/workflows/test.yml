@@ -7,7 +7,7 @@ on:
             - main
 jobs:
     greet:
-        runs-on: ubantu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: THis will greet the user
               run : echo "hello pankaj"
