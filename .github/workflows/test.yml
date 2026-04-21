@@ -1,0 +1,14 @@
+
+name: new test greet
+
+on:
+    push:
+        branches:
+            - main
+jobs:
+    greet:
+        runs-on: ubantu-latest
+        steps:
+            - name: THis will greet the user
+              run : echo "hello pankaj"
+            
