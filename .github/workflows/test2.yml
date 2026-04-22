@@ -1,0 +1,17 @@
+name: second greet
+on: 
+    push:
+        branches: 
+            - main
+jobs:
+    greet:
+        runs-on: ubuntu-latest 
+        steps:
+            - name: new test yml file
+              run: echo "Hello pankaj"
+    hello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Second hello test
+              run: echo "new test $USER "
+
