@@ -1,0 +1,27 @@
+name: new cicd
+
+on: workflow_dispatch
+
+jobs:
+    code:
+        runs-on: ubuntu-latest
+        steps:
+            - name: this the coding step
+              run: echo "Code check is complete"
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: this the test step
+              run: echo "test check is complete"
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: this the build started
+              run: echo "build is under process"
+    deployed:
+        runs-on: ubuntu-latest
+        steps:
+            - name: deployement started
+              run: echo "deployemnet is completed"
+        
+  
