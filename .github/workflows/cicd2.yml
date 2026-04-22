@@ -1,6 +1,19 @@
 name: new cicd
 
-on: workflow_dispatch
+on: 
+    workflow_dispatch:
+     inputs:
+         environment:
+          description: This is the default flow
+          default: 'dev' 
+          required: true
+          type: choice
+          options:
+              - dev
+                stage
+                qa
+                prod
+
                     
 jobs:
     code:
