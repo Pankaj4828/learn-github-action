@@ -16,12 +16,12 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v4
         with:
-          username: ${{ vars.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          username: ${{ vars.DOCKERHUB_USER }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push
         uses: docker/build-push-action@v7
         with:
           context: .
           push: true
-          tags: ${{ vars.DOCKER_USERNAME }}/app:latest
+          tags: ${{ vars.DOCKERHUB_USER }}/app:latest
