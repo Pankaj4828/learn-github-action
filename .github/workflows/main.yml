@@ -3,8 +3,9 @@ name: First WorkFlow
 
 #specify when this job to be trigger
 on: 
-  push:
-     branches: [main]
+  # push:
+  #    branches: [main]
+  Workflow_dispatch:
 
 jobs:
   Greet: 
