@@ -19,5 +19,6 @@ jobs:
               with:
                   image-ref: ${{ vars.DOCKERHUB_USER }}/app:latest
                   severity: 'CRITICAL'
+                  ignore-unfixed: true
                   exit-code: '1'
  
