@@ -16,7 +16,7 @@ jobs:
             
             - name: Run trivy vunarability scan
               uses: aquasecurity/trivy-action@v0.36.0
-                with:
+              with:
                   severity: 'CRITICAL'
                   exit-code: '1'
  
