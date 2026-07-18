@@ -19,6 +19,6 @@
          run: pip install pip-audit
         
        - name: Audit Dependency
-         run: pip-audit -r requirement.txt 
+         run: pip-audit -r requirements.txt 
        
     
